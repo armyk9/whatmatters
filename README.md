@@ -1,8 +1,10 @@
 ArmyK9 - AI-Developed Cybersecurity Tools
 
-Welcome to ArmyK9, a collection of AI-developed tools designed to automate various aspects of cybersecurity monitoring. Whether you're a penetration tester, security researcher, or an IT professional, these tools can assist in tracking vulnerabilities and gaining a clearer understanding of your organization's security posture.
+Welcome to ArmyK9, a collection of AI-developed tools designed to automate various aspects of cybersecurity monitoring. 
+Whether you're a penetration tester, security researcher, or an IT professional, these tools can assist in tracking vulnerabilities and gaining a clearer understanding of your organization's security posture.
 
 Overview
+
 This repository contains scripts and utilities that help automate the process of collecting exploit information, making it easier for organizations to stay informed about relevant vulnerabilities. The primary focus is on:
 
 -Vulnerability listing
