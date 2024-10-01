@@ -2,6 +2,7 @@
 
 Welcome to **ArmyK9**, a collection of AI-developed tools designed to automate various aspects of cybersecurity monitoring. Whether you're a penetration tester, security researcher, or an IT professional, these tools can assist in tracking vulnerabilities and gaining a clearer understanding of your organization's security posture.
 
+
 ## Overview
 
 This repository contains scripts and utilities that help automate the process of collecting exploit information, making it easier for organizations to stay informed about relevant vulnerabilities. The primary focus is on:
@@ -10,11 +11,13 @@ This repository contains scripts and utilities that help automate the process of
 - **Assisting in determining security posture**
 - **Data collection for vulnerability assessments**
 
+
 ## Key Files
 
 - **`whatmatters.go`**: Automates the collection of Remote Code Execution (RCE) exploits from the past 12 months, using RSS feeds from popular exploit code publishers like ExploitDB and PacketStormSecurity. It downloads relevant exploit code into a folder, making it easier to track emerging threats.
 
 - **`vulns_report.go`**: Generates a 1-page HTML listing of the retrieved exploits, organized into a clean table format. The report includes clickable links to detailed information for each exploit, allowing quick review of vulnerabilities published over a given period.
+
 
 ## Purpose
 
@@ -22,13 +25,16 @@ These tools were designed with a dual-purpose mindset. On the offensive side, th
 
 The tools are particularly useful for smaller organizations with limited budgets for high-end cybersecurity solutions. By automating exploit collection, they help maintain an up-to-date view of potential vulnerabilities without needing expensive infrastructure.
 
+
 ## Installation Guide for WhatMatters
+
 
 **Important Notes**:
 - This tool downloads only RCE-related exploit codes from the last 12 months.
 - All downloaded files are renamed based on their category, title, and programming language.
 - Some text files may not be directly compilable but contain single-line payloads that can still be used.
 - Not all downloaded exploit code will compile or work out-of-the-box (OOTB). Use ChatGPT to help correct and fix any issues before compiling or executing the code.
+
 
 ### Steps to Install and Compile:
 
@@ -61,8 +67,10 @@ The tools are particularly useful for smaller organizations with limited budgets
    ```bash
    go build -o whatmatters.exe whatmatters.go
 
+
 # Why ArmyK9?
 The name ArmyK9 reflects my background in both the military and cybersecurity fields. Just as K9 units are deployed for a variety of tasks, this project aims to provide practical tools for cybersecurity tasks in today's challenging landscape. These AI-powered scripts are designed to enhance security workflows and provide a better understanding of an organization's security posture.
+
 
 # License
 This project is licensed under the MIT License. See the LICENSE file for details.
