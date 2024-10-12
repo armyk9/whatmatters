@@ -73,7 +73,7 @@ The tools are particularly useful for smaller organizations with limited budgets
    go build -o whatmatters.exe whatmatters.go
   ````
 
-  ##### For Linux:
+  #### For Linux:
    ````bash
    go build -o whatmatters whatmatters.go
    ````
