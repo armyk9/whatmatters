@@ -75,7 +75,7 @@ The tools are particularly useful for smaller organizations with limited budgets
 
 ## Why WhatMatters?
 
-A close colleague, who serves as a Cybersecurity Manager at a local bank, recently shared his concerns regarding the lack of timely visibility into newly published exploits that could threaten his organization. To address this challenge, I initiated a project leveraging ChatGPT to develop an application that would scrape reputable exploit databases for emerging vulnerabilities, providing the organization with real-time insights into potential threats.
+A friend of mine, who serves as a Cybersecurity Manager at a local bank, recently shared his concerns regarding the lack of timely visibility into newly published exploits that could threaten his organization. To address this challenge, I initiated a project leveraging ChatGPT to develop an application that would scrape reputable exploit databases for emerging vulnerabilities, providing the organization with real-time insights into potential threats.
 
 ## License
 
