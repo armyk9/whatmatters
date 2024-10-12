@@ -42,36 +42,41 @@ The tools are particularly useful for smaller organizations with limited budgets
    
    ```bash
    git clone https://github.com/derang3d/ArmyK9
+   ```
 
 2. **Initialize the Go Module**:  
    Run the following command in your CLI, within the directory where `whatmatters.go` is located:
 
    ```bash
    go mod init whatmatters
+   ```
 
 3. **Install GoQuery**:   
    Install GoQuery, which is required for parsing web content, by running the following command:
 
    ```bash
    go get github.com/PuerkitoBio/goquery
+   ```
 
 4. **Install GoFeed**:
    Install GoFeed for parsing RSS feeds by running the command:
 
    ```bash
    go get github.com/mmcdole/gofeed
+   ```
 
 5. **Compile the Application**:
    Once the dependencies are installed, compile the application by running this command in the build directory:
 
-   For Windows:
-   ```bash
+   #### For Windows:
+   ````bash
    go build -o whatmatters.exe whatmatters.go
+  ````
 
-   For Linux:
-   ```bash
+  ##### For Linux:
+   ````bash
    go build -o whatmatters whatmatters.go
-
+   ````
 
 # Why WhatMatters?
 A close colleague, who serves as a Cybersecurity Manager at a local bank, recently shared his concerns regarding the lack of timely visibility into newly published exploits that could threaten his organization. To address this challenge, I initiated a project leveraging ChatGPT to develop an application that would scrape reputable exploit databases for emerging vulnerabilities, providing the organization with real-time insights into potential threats.
