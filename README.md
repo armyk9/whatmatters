@@ -36,7 +36,7 @@ The tools are particularly useful for smaller organizations with limited budgets
 1. **Clone the repository**:
    
    ```bash
-   git clone git clone https://github.com/armyk9/whatmatters.git
+   git clone https://github.com/armyk9/whatmatters.git
    ```
 
 2. **Initialize the Go Module**:  
