@@ -64,12 +64,17 @@ The tools are particularly useful for smaller organizations with limited budgets
 5. **Compile the Application**:
    Once the dependencies are installed, compile the application by running this command in the build directory:
 
+   For Windows:
    ```bash
    go build -o whatmatters.exe whatmatters.go
 
+   For Linux:
+   ```bash
+   go build -o whatmatters whatmatters.go
 
-# Why ArmyK9?
-The name ArmyK9 reflects my background in both the military and cybersecurity fields. Just as K9 units are deployed for a variety of tasks, this project aims to provide practical tools for cybersecurity tasks in today's challenging landscape. These AI-powered scripts are designed to enhance security workflows and provide a better understanding of an organization's security posture.
+
+# Why WhatMatters?
+A close colleague, who serves as a Cybersecurity Manager at a local bank, recently shared his concerns regarding the lack of timely visibility into newly published exploits that could threaten his organization. To address this challenge, I initiated a project leveraging ChatGPT to develop an application that would scrape reputable exploit databases for emerging vulnerabilities, providing the organization with real-time insights into potential threats.
 
 
 # License
