@@ -15,7 +15,7 @@ This repository contains scripts and utilities that help automate the process of
 
 - **`whatmatters.go`**: Automates the collection of Remote Code Execution (RCE) exploits from the past 12 months, using RSS feeds from popular exploit code publishers like ExploitDB and PacketStormSecurity. It downloads relevant exploit code into a folder, making it easier to track emerging threats.
 
-- **`vulns_report.go`**: Generates a 1-page HTML listing of the retrieved exploits, organized into a clean table format. The report includes clickable links to detailed information for each exploit, allowing quick review of vulnerabilities published over a given period.
+- **`exploits_list.go`**: Generates a 1-page HTML listing of the retrieved exploits, organized into a clean table format. The report includes clickable links to detailed information for each exploit, allowing quick review of vulnerabilities published over a given period.
 
 ## Purpose
 
@@ -66,11 +66,13 @@ The tools are particularly useful for smaller organizations with limited budgets
    #### For Windows:
    ```bash
    go build -o whatmatters.exe whatmatters.go
+   go build -o exploits_list.exe exploits_list.go
    ```
 
    #### For Linux:
    ```bash
    go build -o whatmatters whatmatters.go
+   go build -o exploits_list.exe exploits_list.go
    ```
 
 ## Why WhatMatters?
