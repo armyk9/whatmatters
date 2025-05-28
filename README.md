@@ -1,84 +1,78 @@
+# 🐾 ArmyK9 - AI-Developed Cybersecurity Tools
 
-# ArmyK9 - AI-Developed Cybersecurity Tools
+Welcome to **ArmyK9**, a collection of AI-developed tools designed to automate various aspects of cybersecurity monitoring. Whether you're a 🛡️ penetration tester, 🧪 security researcher, or an 💼 IT professional, these tools can assist in tracking vulnerabilities and gaining a clearer understanding of your organization's security posture.
 
-Welcome to **ArmyK9**, a collection of AI-developed tools designed to automate various aspects of cybersecurity monitoring. Whether you're a penetration tester, security researcher, or an IT professional, these tools can assist in tracking vulnerabilities and gaining a clearer understanding of your organization's security posture.
-
-## Overview
+## 📦 Overview
 
 This repository contains scripts and utilities that help automate the process of collecting exploit information, making it easier for organizations to stay informed about relevant vulnerabilities. The primary focus is on:
 
-- **Vulnerability listing**
-- **Assisting in determining security posture**
-- **Data collection for vulnerability assessments**
+- 🐞 **Vulnerability listing**
+- 🧭 **Assisting in determining security posture**
+- 📊 **Data collection for vulnerability assessments**
 
-## Key Files
+## 📁 Key Files
 
-- **`whatmatters.go`**: Automates the collection of Remote Code Execution (RCE) exploits from the past 12 months, using RSS feeds from popular exploit code publishers like ExploitDB and PacketStormSecurity. It downloads relevant exploit code into a folder, making it easier to track emerging threats.
+- **`whatmatters.go`** 🧠: Automates the collection of Remote Code Execution (RCE) exploits from the past 12 months, using RSS feeds from popular exploit code publishers like ExploitDB and PacketStormSecurity. It downloads relevant exploit code into a folder, making it easier to track emerging threats.
 
-- **`exploits_list.go`**: Generates a 1-page HTML listing of the retrieved exploits, organized into a clean table format. The report includes clickable links to detailed information for each exploit, allowing quick review of vulnerabilities published over a given period.
+- **`exploits_list.go`** 🖥️: Generates a 1-page HTML listing of the retrieved exploits, organized into a clean table format. The report includes clickable links to detailed information for each exploit, allowing quick review of vulnerabilities published over a given period.
 
-## Purpose
+## 🎯 Purpose
 
-These tools were designed with a dual-purpose mindset. On the offensive side, they help penetration testers automate the collection of relevant exploit code. On the defensive side, they allow organizations to keep track of recently published RCE exploits and assess whether their operating systems, software, or platforms are vulnerable. This helps organizations focus their efforts on patching or upgrading systems accordingly, leading to a better overall security posture.
+These tools were designed with a dual-purpose mindset:
 
-The tools are particularly useful for smaller organizations with limited budgets for high-end cybersecurity solutions. By automating exploit collection, they help maintain an up-to-date view of potential vulnerabilities without needing expensive infrastructure.
+- 🕵️ On the **offensive** side, they help penetration testers automate the collection of relevant exploit code.  
+- 🛡️ On the **defensive** side, they allow organizations to keep track of recently published RCE exploits and assess whether their systems are vulnerable.
 
-## Installation Guide for WhatMatters
+The tools are especially useful for smaller organizations with 🪙 limited budgets for high-end cybersecurity solutions. By automating exploit collection, they help maintain an up-to-date view of potential vulnerabilities without expensive infrastructure.
+
+## 🛠️ Installation Guide for WhatMatters
 
 **Important Notes**:
-- This tool downloads only RCE-related exploit codes from the last 12 months.
-- All downloaded files are renamed based on their category, title, and programming language.
-- Some text files may not be directly compilable but contain single-line payloads that can still be used.
-- Not all downloaded exploit code will compile or work out-of-the-box (OOTB). Use ChatGPT to help correct and fix any issues before compiling or executing the code.
+- ⏱️ This tool downloads only RCE-related exploit codes from the last 12 months.
+- 📂 Files are renamed based on category, title, and programming language.
+- ⚠️ Some files may contain single-line payloads and may not compile OOTB.
+- 🧠 Use ChatGPT to help fix any non-compiling code before using it.
 
-### Steps to Install and Compile:
+### 🧬 Steps to Install and Compile:
 
 1. **Clone the repository**:
-   
    ```bash
    git clone https://github.com/armyk9/whatmatters.git
    ```
 
-2. **Initialize the Go Module**:  
-   Run the following command in your CLI, within the directory where `whatmatters.go` is located:
-
+2. **Initialize the Go Module**:
    ```bash
    go mod init whatmatters
    ```
 
-3. **Install GoQuery**:  
-   Install GoQuery, which is required for parsing web content, by running the following command:
-
+3. **Install GoQuery**:
    ```bash
    go get github.com/PuerkitoBio/goquery
    ```
 
 4. **Install GoFeed**:
-   Install GoFeed for parsing RSS feeds by running the command:
-
    ```bash
    go get github.com/mmcdole/gofeed
    ```
 
 5. **Compile the Application**:
-   Once the dependencies are installed, compile the application by running this command in the build directory:
 
-   #### For Windows:
+   #### 🪟 For Windows:
    ```bash
    go build -o whatmatters.exe whatmatters.go
    go build -o exploits_list.exe exploits_list.go
    ```
 
-   #### For Linux:
+   #### 🐧 For Linux:
    ```bash
    go build -o whatmatters whatmatters.go
-   go build -o exploits_list.exe exploits_list.go
+   go build -o exploits_list exploits_list.go
    ```
 
-## Why WhatMatters?
+## ❓ Why WhatMatters?
 
-A friend of mine, who serves as a Cybersecurity Manager at a local bank, recently shared his concerns regarding the lack of timely visibility into newly published exploits that could threaten his organization. To address this challenge, I initiated a project leveraging ChatGPT to develop an application that would scrape reputable exploit databases for emerging vulnerabilities, providing the organization with real-time insights into potential threats.
+A friend of mine, who serves as a Cybersecurity Manager at a local bank 🏦, recently shared his concerns about the lack of timely visibility into newly published exploits. To address this, I created a tool that scrapes exploit databases and delivers real-time insights into potential threats 🚨 — powered by ChatGPT.
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
